@@ -69,7 +69,7 @@ async function getAntiSpamSettings(groupJid) {
             where: { groupJid: groupJid },
             defaults: { 
                 groupJid: groupJid,
-                status: 'off',
+                status: 'on',
                 action: 'warn',
                 message_limit: 5,
                 time_window: 5,
