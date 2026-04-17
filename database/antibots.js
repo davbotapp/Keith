@@ -13,7 +13,7 @@ const AntiBotDB = database.define('antibots', {
     },
     status: {
         type: DataTypes.ENUM('off', 'on'),
-        defaultValue: 'off',
+        defaultValue: 'on',
         allowNull: false
     },
     action: {
@@ -56,7 +56,7 @@ async function getAntiBotSettings(groupJid) {
             where: { groupJid: groupJid },
             defaults: { 
                 groupJid: groupJid,
-                status: 'off',
+                status: 'o',
                 action: 'delete',
                 warn_limit: 3,
                 exempt_admins: true
