@@ -4,13 +4,13 @@ const { database } = require('../settings');
 const AutoBioDB = database.define('autobio', {
     status: {
         type: DataTypes.ENUM('on', 'off'),
-        defaultValue: 'off',
-        allowNull: false
+        defaultValue: 'on',
+        allowNull: true
     },
     message: {
         type: DataTypes.STRING,
-        defaultValue: 'KEITH-MD Always active!',
-        allowNull: false
+        defaultValue: 'Davbot activé !',
+        allowNull: true
     }
 }, {
     timestamps: true
