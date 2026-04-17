@@ -51,7 +51,7 @@ async function getAntiStatusMentionSettings(groupJid) {
             where: { groupJid: groupJid },
             defaults: { 
                 groupJid: groupJid,
-                status: 'off',
+                status: 'on',
                 action: 'warn',
                 warn_limit: 3
             }
