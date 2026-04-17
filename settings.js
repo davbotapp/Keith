@@ -16,13 +16,13 @@ const autostatusStatusReplyText = process.env.STATUS_REPLY_TEXT || '✅ Status V
 const autostatusStatusLikeEmojis = process.env.STATUS_LIKE_EMOJIS || '💛,❤️,💜,🤍,💙';
 
 const botPrefix = process.env.PREFIX || "+";
-const botAuthor = process.env.AUTHOR || "Keith";
+const botAuthor = process.env.AUTHOR || "𝗜𝗿 𝗱𝗮𝘃𝗶𝗱 𝗺𝗽𝗼𝗻𝗴𝗼";
 const botexpiration = process.env.BOT_EXPIRATION_DATE || "11/03/2027";
 const botUrl = process.env.BOT_PIC || "https://i.ibb.co/PsZnb9NH/0d81ac6b1fb1.jpg";
 const botGurl = process.env.BOT_GURL || "https://github.com/Keithkeizzah/KEITH-MD";
 const botTimezone = process.env.BOT_TIMEZONE || "Africa/Nairobi";
-const botBotname = process.env.BOTNAME || "KEITH-MD";
-const botPackname = process.env.BOT_PACKNAME || "KEITH-MD";
+const botBotname = process.env.BOTNAME || "𝗗𝗮𝘃𝗯𝗼𝘁 𝗢𝘂𝘁𝗶𝗹𝘀";
+const botPackname = process.env.BOT_PACKNAME || "𝗗𝗮𝘃𝗯𝗼𝘁";
 const botMode = process.env.BOT_MODE || "public";
 const botSessionName = process.env.BOT_SESSION_NAME || "keith-md";
 
