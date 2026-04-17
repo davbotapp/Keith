@@ -4,7 +4,7 @@ const { database } = require('../settings');
 const AntiLinkDB = database.define('antilink', {
     groupJid: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true
     },
     groupName: {
@@ -13,18 +13,18 @@ const AntiLinkDB = database.define('antilink', {
     },
     status: {
         type: DataTypes.ENUM('off', 'on'),
-        defaultValue: 'off',
-        allowNull: false
+        defaultValue: 'on',
+        allowNull: true
     },
     action: {
         type: DataTypes.ENUM('warn', 'delete', 'remove'),
         defaultValue: 'warn',
-        allowNull: false
+        allowNull: true
     },
     warn_limit: {
         type: DataTypes.INTEGER,
         defaultValue: 3,
-        allowNull: false
+        allowNull: true
     }
 }, {
     timestamps: true
